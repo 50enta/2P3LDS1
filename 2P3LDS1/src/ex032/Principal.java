@@ -7,12 +7,10 @@ package ex032;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+
+
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author YOGA
- */
 public class Principal extends javax.swing.JFrame {
 
     /**
