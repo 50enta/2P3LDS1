@@ -10,20 +10,27 @@ public class Emprestimo {
     private Pessoa pessoa;
     private boolean devolvido;
 
+
+
     public Emprestimo(Livro livro, Pessoa pessoa) {
         this.livro = livro;
         this.pessoa = pessoa;
     }
 
+
+
+
     public boolean emprestar(Date dataEmprestimo) {
         if (this.getLivro().getQuantidade() > 0) {
             this.setDataEmprestimo(dataEmprestimo);
+
             this.setDevolvido(false);
             this.getLivro().setQuantidade(this.getLivro().getQuantidade() - 1);
             return true;
         }
         return false;
     }
+    
 
     public boolean devolver(Date dataDevolucao) {
         this.setDataDevolucao(dataDevolucao);
