@@ -6,7 +6,7 @@ public class Quadro extends JFrame {
 
     public Quadro() {
         super("Nosso Título");
-
+        
         this.add(new Painel());
 
         this.setSize(600, 600);
@@ -14,7 +14,7 @@ public class Quadro extends JFrame {
         this.setVisible(true);
 
     }
-
+    
     public static void main(String[] args) {
         new Quadro();
     }
